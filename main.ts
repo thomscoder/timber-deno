@@ -1,4 +1,4 @@
-import Timber from './timber.ts';
+import Timber from './mod.ts';
 
 const arr = ["Midoriya", "Thomas", "John", "Mamma"];
 const arr2 = ["Thomas", "Hunter", "Deku", "Lio", "Naruto"]

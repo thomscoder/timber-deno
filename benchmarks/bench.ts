@@ -1,4 +1,4 @@
-import Timber from '../timber.ts';
+import Timber from '../mod.ts';
 import { faker } from '../utils/deps.ts';
 
 const timber = new Timber();

@@ -27,15 +27,15 @@ const timber = new Timber();
 // Insert an entire array...
 timber.insert(arr);
 
-// ...or a single string
-timber.insert("Voldemort");
+// ...or a single string passing an identifier (e.g. the variable that contains that value or a category)
+timber.insert("imaginary", "Voldemort");
 
-// Find the word passing an identifier (e.g. the variable that contains that value)
-timber.search("arr", "Voldemort"); // Voldemort
+// Find the word
+timber.search("Voldemort"); // Voldemort
 // Find all words that start with given Prefix
 timber.findAllWords("Vold"); // ["Voldemort", ...]
 // Get the identifier
-timber.belongsTo("Voldemort"); // ["arr"]
+timber.belongsTo("Voldemort"); // ["imaginary"]
 // Delete a word
 timber.delete("Voldemort");
 ```

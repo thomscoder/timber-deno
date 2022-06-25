@@ -1,4 +1,4 @@
-TimberJS for Deno 🍃
+# TimberJS for Deno 🍃
 
 Find strings in large arrays fast.
 

@@ -1,12 +1,21 @@
-import Timber from "https://deno.land/x/timberjs@first_release/mod.ts";
+import { Timber } from "https://deno.land/x/timberjs@timber/mod.ts";
+import {faker} from './utils/deps.ts'
 
-const arr = ["Midoriya", "Thomas", "John", "Mamma"];
-const arr2 = ["Thomas", "Hunter", "Deku", "Lio", "Naruto"]
+const arr = Array.from({length: 100}, () => {
+    return faker.name.firstName();
+})
+const arr2 = Array.from({ length: 800 }, () => {
+    return faker.name.firstName();
+});
+
+
 const timber = new Timber();
+timber.insert('imaginary', "Voldemort");
+timber.insert('imaginary', "Naruto");
 timber.insert("arr", arr);
 timber.insert("arr2", arr2);
 
-console.log(timber.search("Thomas"));
-console.log(timber.findAllWords("Naru"));
-console.log(timber.delete("Thomas"));
-console.log(timber.belongsTo("Thomas"));
+console.log(timber.search("Thomas")); // Thomas | undefined
+console.log(timber.findAllWords("Vold")); // ["Voldemort"]
+console.log(timber.delete("Voldemort")); // undefined
+console.log(timber.belongsTo("Naruto")); // ["imaginary"]

@@ -2,7 +2,7 @@ import { TimberTrie } from './utils/interfaces.ts';
 
 import Node from './src/node.ts';
 
-class Timber implements TimberTrie {
+export class Timber implements TimberTrie {
 
     private root: Node | null;
 
@@ -119,5 +119,3 @@ class Timber implements TimberTrie {
         return currentNode.belongs;
     }
 }
-
-export default Timber;

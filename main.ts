@@ -1,4 +1,4 @@
-import Timber from './mod.ts';
+import Timber from "https://deno.land/x/timberjs@first_release/mod.ts";
 
 const arr = ["Midoriya", "Thomas", "John", "Mamma"];
 const arr2 = ["Thomas", "Hunter", "Deku", "Lio", "Naruto"]

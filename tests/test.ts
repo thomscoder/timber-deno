@@ -1,5 +1,5 @@
 import { assertEquals, assertNotEquals, faker } from '../utils/deps.ts'
-import Timber from '../mod.ts';
+import { Timber } from '../mod.ts';
 
 const timber: Timber = new Timber();
 const arr: string[] = [];

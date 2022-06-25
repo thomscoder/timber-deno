@@ -6,7 +6,10 @@ Timber implements a Prefix Tree under the hood and allows a fast string search i
 <h3>Import</h3>
 
 ```javascript
+// Either...
 import { Timber } from "https://deno.land/x/timberjs@timber/mod.ts";
+// or...
+import { Timber } from "https://raw.githubusercontent.com/thomscoder/timber-deno/master/mod.ts"
 ```
 
 <h2><b>Usage</b></h2>

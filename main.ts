@@ -1,10 +1,10 @@
-import { Timber } from "https://deno.land/x/timberjs@timber/mod.ts";
+import { Timber } from "https://raw.githubusercontent.com/thomscoder/timber-deno/master/mod.ts";
 import {faker} from './utils/deps.ts'
 
-const arr = Array.from({length: 100}, () => {
+const arr = Array.from({length: 20483}, () => {
     return faker.name.firstName();
 })
-const arr2 = Array.from({ length: 800 }, () => {
+const arr2 = Array.from({ length: 10800 }, () => {
     return faker.name.firstName();
 });
 
